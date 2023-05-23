@@ -39,9 +39,11 @@
 		</package> 
 		
 		<package name="api" namespace="/api" extends="rest-default">
-			<action name="users/*" class="com.aurum.struts.rest.UserController">
-				<param name="id">{1}</param> 
+			<action name="users/*" class="com.aurum.struts.rest.RegisterController">
+				<param name="id">{1}</param>
 			</action>
 		</package>
+		
+		
 			
 	</struts>

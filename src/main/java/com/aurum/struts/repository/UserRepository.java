@@ -18,6 +18,7 @@ public class UserRepository {
 	public Map<String, User> save(User user) {
 		String id = String.valueOf(users.size() + 1);
 		users.put(id, user);
+//		users.put(id, new User("10","user","11111111"));
 		return users;
 	}
 	
@@ -34,4 +35,8 @@ public class UserRepository {
 		return users;
 	}
 
+	
+
+	
+	
 }

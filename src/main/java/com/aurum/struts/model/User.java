@@ -6,6 +6,8 @@ public class User {
 	private String email;
 	private String mobileNumber;
 	
+	
+	
 	public User() {
 		// TODO Auto-generated constructor stub
 	}

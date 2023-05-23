@@ -21,6 +21,7 @@ public class UserController implements ModelDriven<Object> {
 	
 	// GET	/api/users
 	public HttpHeaders index() {
+		
 		users = repository.findAll();
 		System.out.println("GET \t /user");
 		return new DefaultHttpHeaders("index");
@@ -39,6 +40,18 @@ public class UserController implements ModelDriven<Object> {
 		System.out.println("POST \t /user" + user.getEmail());
 		return new DefaultHttpHeaders("create");
 	}
+	
+	
+//	public HttpHeaders register() {
+//		users = repository.register(user);
+//		System.out.println("POST \t /user" + user.getEmail());
+//		return new DefaultHttpHeaders("create");
+//	}
+	
+	
+	
+	
+	
 	
 	// PUT	/api/users
 	public HttpHeaders update() {
